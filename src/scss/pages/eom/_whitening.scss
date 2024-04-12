@@ -1,0 +1,291 @@
+@charset "UTF-8";
+/* ==========================================================
+	whitening-page
+========================================================== */
+.whitening{
+
+
+.whitening-row{
+	display: flex;
+	justify-content: space-between;
+}
+
+/* outline */
+.cure1-outline-section {
+	max-width: 1040px;
+	padding: 100px 20px 0;
+	margin: auto;
+	h2.head {
+		text-align: center;
+		letter-spacing: 0.5rem;
+		text-indent: 0.5rem;	
+		margin-bottom: 50px;
+		line-height: 150%;	
+		font-weight: $font_regular;
+	}
+	p.intro {
+		margin: 0 auto 50px;
+		letter-spacing: 0.2rem;
+		line-height: 200%;
+		text-align: center;	
+	}
+}
+
+
+/* office-whitening */
+.cure1-office-whitening-section {
+	width: 100%;
+	margin-top: 100px;
+	.wrapper {
+		max-width: 1040px;
+		padding: 0 20px;
+		margin: 0 auto;
+		overflow: hidden;	
+	}
+	.left {
+		width: 56%;
+		padding-right: 20px;
+	}
+	.right {
+		padding-left: 20px;
+		text-align: center;
+		img {
+			max-width: 400px;
+			margin: auto;
+			width: 100%;
+			display: block;
+		}
+	}
+	h3.head {
+		margin-bottom: 10px;
+		line-height: 150%;
+	}
+	h4.intro {
+		margin-bottom: 30px;
+		line-height: 150%;
+	}
+	p.office-whitening {
+		line-height: 180%;	
+		font-size: 1.4rem;
+	}
+	.center {
+		clear: both;
+		max-width: 700px;
+		padding: 50px 20px 0;	
+		margin: 50px auto 0;
+		h4.head {
+			font-weight: $font_bold;
+			margin-bottom: 30px;
+			text-align: center;
+			span {
+				color: #fd2802;
+				display: block;
+				margin-top: 10px;
+			}
+		}
+		.xtra {
+			margin-bottom: 0px;
+			line-height: 150%;
+		}
+		img {
+			display: block;
+			margin: auto;
+			max-width: 400px;
+			width: 100%;
+		}
+		.comment {
+			margin: 50px 0 0;
+			line-height: 150%;
+			color: #fd2802;
+		}
+	}
+}
+
+
+.cure1-result-section{
+	background-color: #F5F5F7;
+	margin-top: 80px;
+	padding: 30px 0;
+	.result-img__wrap{
+		max-width: 800px;
+		width: 100%;
+		margin: auto;
+		padding:  0 10px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.img-wrap{
+		padding: 0 10px;
+		text-align: center;
+		p{
+			margin-top: 25px;
+			font-size: 1.4rem;
+		}
+		img{margin: auto;}
+	}
+	@include mq(){
+		.result-img__wrap{
+			justify-content: center;
+		}
+	}
+	@include mq(smt){
+		.result-img__wrap{
+			flex-direction: column;
+		}
+		.img-wrap{
+			padding: 0;
+			margin: 10px 0;
+		}
+	}
+}
+
+
+.cure1-howtowhitening-section {
+	max-width: 1040px;
+	margin: 80px auto 0;
+	padding: 0 20px;
+	h2.head {
+		text-align: center;
+		letter-spacing: 0.5rem;
+		margin: 50px 0 10px;
+		line-height: 150%;	
+		br {
+			display: none;
+		}	
+	}
+	h3.head {
+		text-align: left;
+		margin: 50px 0 10px;
+		line-height: 1.8;		
+	}
+	p.howtowhitening {
+		margin: 0 auto;
+		text-align: left;
+		line-height: 1.8;
+		.anchor{
+			color: $color_textlink;
+		}
+	}
+}
+
+
+/* home-whitening */
+.cure1-home-whitening-section {
+	max-width: 1000px;
+	margin: 50px auto 200px auto;
+	overflow: hidden;
+	.left {
+		width: 60%;
+		padding:0 20px;
+	}
+	.right {
+		text-align: center;
+		padding: 0 20px;
+		img {
+			max-width: 400px;
+			margin: auto;
+			width: 100%;
+			display: block;
+		}
+	}
+	h3.head {
+		margin-bottom: 10px;	
+	}
+	h4.intro {
+		margin-bottom: 30px;
+	}
+	p.home-whitening {
+		line-height: 2.2;	
+	}
+	.annotation {
+		padding: 30px;
+		background-color: #efefef;	
+		margin-bottom: 120px;
+		h4 {
+			font-weight: $font_bold;
+			margin-bottom: 20px;
+			text-align: center;	
+		}
+		p {
+			font-weight: $font_medium;
+			margin-bottom: 20px;
+			text-align: center;	
+		}
+		ul{
+			padding-left: 20px;
+			li{
+				list-style-type: circle;				
+				line-height: 1.8;
+			}
+		} 
+	}
+}
+
+@include mq(sm2){
+	
+	.cure1-office-whitening-section  .whitening-row{
+		flex-direction: column;
+		.left, .right{
+			width: 100%;
+			padding: 0;
+			margin-bottom: 20px;
+		}
+	}
+	.cure1-office-whitening-section .right img{
+		max-width: 300px;
+	}
+	.cure1-result-section{
+		margin-top: 20px;
+	}
+}
+
+
+@include mq(smt){
+	.cure1-outline-section{
+		padding-top: 50px;
+		h2.head{
+			font-size: 2.2rem;
+			br{display: none;}
+		}
+		p.intro{
+			text-align: left;
+			br{display: none;}
+		}
+	}
+	.cure1-office-whitening-section{
+		.center .comment{
+			margin-top: 20px;
+		}
+		.center#after{
+			margin-top: 0;
+		}
+	} 
+	
+	.head{
+		text-align: center;
+	}
+	.intro{
+		text-align: center;
+		margin-bottom: 20px !important;
+	}
+	.cure1-home-whitening-section{
+		margin-bottom: 100px;
+		.annotation{
+			padding: 50px 20px;
+			margin-bottom: 50px;
+		}
+		.whitening-row{
+			flex-direction: column-reverse;
+			.left, .right{
+				width: 100%;
+				margin: 10px 0;
+			}
+		}
+	} 
+
+}
+
+
+
+/* -------  end --------  */
+}

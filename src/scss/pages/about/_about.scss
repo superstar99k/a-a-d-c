@@ -1,0 +1,301 @@
+@charset "UTF-8";
+/* ==========================================================
+	about top page
+========================================================== */
+
+.about-container{
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: auto;
+    @include mq(sm3){
+        padding: 0 15px;
+    }
+}
+
+.about-heading{
+    font-size: 3rem;
+    font-weight: bold;
+    color: $color_black;
+    text-align: center;
+
+    @include mq(smt){
+        font-size: 2rem;
+    }
+}
+
+
+/* ==========================================================
+	about content
+========================================================== */
+.about-mainvisual {
+	width: 100%;
+    padding: 100px 0;
+	min-height: 880px;
+	position: relative;
+	background-image: url("../images/about/about-top__mv.png"); 
+	background-size:  cover;
+	background-position: 50%;
+    &__desc{
+        font-size: 1.6rem;
+        margin-top: 100px;
+    }
+
+    @include mq(smt){
+        padding: 50px 0;
+        &__desc{
+            margin-top: 40px;
+        }
+    }
+}
+
+
+.about-outline {
+	width: 100%;
+	margin: 0 auto;
+	padding: 100px 0;
+	background-image: url("../images/about/about-outline__mv.png");
+	background-size: cover;
+	background-attachment: fixed;
+	background-position-x: -200px;
+	
+	&__heading {
+		@include base-font();
+		text-align: center;
+		margin: 0 auto 80px;
+		font-size: 3.0rem;
+		font-weight: $font_bold;
+		color: $color_black;
+	}
+	&__copy {
+		@include base-font();
+		font-size: 1.6rem;
+		font-weight: $font_regular;
+		line-height: 2;
+		color: $color_black;
+		text-align: left;
+		max-width: 1020px;
+		margin: 0 auto;
+	}
+	&__list {
+		@include base-font();
+		list-style: none;
+		text-align: center;
+		margin-top: 90px;
+		padding: 0;
+		font-size: 1.8rem;
+		font-weight: $font_bold;
+		line-height: 2;
+		color: $color_black;
+        border-top: 1px solid #CCCCCC;
+        li{
+            padding: 8px 0;
+            border-bottom: 1px solid #CCCCCC;
+        }
+	}
+
+	@include mq(){
+		background: none;
+	}
+
+	@include mq(sm2){
+		&__list{
+			text-align: left;
+            line-height: 1.8;
+		}
+	}
+
+	@include mq(smt){
+		padding: 50px 0;
+
+		&__heading{
+			text-align: left;
+			position: absolute;
+			top: 100px;
+			right: 10%;
+			font-size: 2rem;
+			&-wrap{
+				position: relative;
+				height: 275px;
+				margin-bottom: 35px;
+				background-image: url("../images/top/top-outline.png");
+				background-size: cover;
+			}
+		}
+
+		&__list {
+            margin-top: 30px;
+            font-size: 1.6rem;
+            font-weight: $font_medium;
+            li{
+                text-align: left;
+            }
+        }
+	}
+}
+
+
+.about-outline-comment{
+    padding: 100px 0;
+    background-color: #CEC1A8;
+    p{
+        color: white;
+        line-height: 30px;
+    }
+
+    @include mq(smt){
+        padding: 50px 0;
+        p{
+            line-height: inherit;
+        }
+    }
+}
+
+.about-proportion-smile{
+    background-color: #FBFBFB;
+    padding: 100px 0 120px 0;
+
+    .description{
+        margin-top: 100px;
+    }
+    .aads-wrap {
+        max-width: 730px;
+        margin: 0 auto;
+        padding: 100px 0 135px 0;
+        overflow: hidden;
+        .aads-circle {
+            width: 730px;
+            height: 740px;
+            position: relative;
+            float: left;
+            .circle{
+                font-family: "futura-pt",sans-serif;
+                width: 400px;
+                height: 400px;
+                border-radius: 50%;
+                color: #fff;
+                display: table;
+                text-align: center;
+                line-height: 150%;
+                letter-spacing: 0.2rem;
+                text-indent: 0.2rem;
+                font-weight: $font_medium;
+                position: absolute;
+                font-size: 3rem;
+                &.aads-dental {
+                    background-color: rgba(0,180,240,0.5);
+                    top: 0px;
+                    left: 0px;
+                }
+                &.aads-medical {
+                    background-color: rgba(253,40,2,0.5);
+                    top: 65px;
+                    right: 0px;
+                }
+                &.aads-esthetic {
+                    background-color: rgba(235,100,0,0.5);
+                    bottom: 7px;
+                    left: 110px;
+                }
+                p{
+                    display: table-cell;
+                    vertical-align: middle;
+                }
+            }
+        }
+    }
+    .detail{
+        display: flex;
+        justify-content: center;
+        &-item{
+            max-width: 400px;
+            width: 33.33%;
+            &:not(:last-child){
+                margin-right: 20px;
+            }
+            &.dental .detail-head{
+                color: #51B2EB;
+            }
+            &.medical .detail-head{
+                color: #E94126;
+            }
+            &.esthetic .detail-head{
+                color: #DB6D2A;
+            }
+        }
+        &-head{
+            font-family: "futura-pt",sans-serif;
+            font-size: 2rem;
+        }
+        &-title{
+            margin-top: 4px;
+            font-weight: bold;
+            font-size: 2rem;
+        }
+        &-desc{
+            margin-top: 17px;
+            font-size: 1.4rem;
+        }
+    }
+
+    @include mq(pc2){
+        .detail{
+            margin: 0 -80px;
+        }
+    }
+
+    @include mq(){
+        .detail{
+            flex-direction: column;
+            align-items: center;
+            &-item{
+                max-width: 100%;
+                width: 100%;
+                &:not(:last-child){
+                    margin-right: 0;
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        .aads-wrap {
+            max-width: vw(730);
+            padding: vw(100) 0 vw(135) 0;
+            .aads-circle{
+                width: vw(730);
+                height: vw(740);
+                .circle{
+                    width: vw(400);
+                    height: vw(400);
+                    p{
+                        font-size: vw(40);
+                        line-height: vw(50);
+                    }
+                    &.aads-dental {
+                        top: 0;
+                        left: 0;
+                    }
+                    &.aads-medical {
+                        top: vw(65);
+                        right: 0;
+                    }
+                    &.aads-esthetic {
+                        bottom: vw(7);
+                        left: vw(110);
+                    }
+                }
+            }
+        }
+    }
+
+    @include mq(smt){
+        padding: 50px 0;
+        .description{
+            margin-top: 30px;
+        }
+        .detail{
+            &-head{  font-size: 1.8rem; }
+            &-title{ font-size: 1.6rem; }
+            &-desc{  margin-top: 8px;  }
+        }
+    }
+
+}

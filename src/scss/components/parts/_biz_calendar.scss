@@ -1,0 +1,102 @@
+@charset "UTF-8";
+/* -------------------
+	BIZ CALEANDER
+--------------------*/
+
+
+/* Widget-BizCalendar */
+.widget.widget_bizcalendar {
+	width: 530px;
+	height: 350px;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+    h2.widgettitle {
+        text-align: center;
+        font-weight: $font_regular;
+        font-size: 1.8rem;
+        margin: 30px 0 20px;
+    }
+    #biz_calendar {
+        max-width: 400px !important;
+        margin: 0 auto;
+        table.bizcal {
+            margin: 0 auto 10px;	
+            text-align: center;
+            table-layout: auto;
+            line-height: 150%;
+            border: none !important;
+            font-size: 1.2rem;
+            tbody {
+                border: none !important;
+                tr {
+                    height: 35px;
+                    border-bottom: 1px solid #ddd;	
+                    &:first-child {
+                        border-bottom: none;		
+                    }
+
+                    td {
+                        margin: 0 30px;
+                        border-right: 1px solid #ddd;	
+                        &:last-child {
+                            border-right: none;
+                        }
+                    }
+                    td.calmonth {
+                        font-weight: $font_regular;
+                        font-size: 1.5rem;
+                        text-indent: 10px;
+                        height: 50px;
+                        border: none;
+                    }
+                    td.holiday {
+                        background-color: rgba(230,0,18,0.05);
+                        color: #e60012;
+                    }
+                    td.eventday {
+                        background-color: rgba(0,117,169,0.05);
+                        color: #0075a9;	
+                    }
+                    th {
+                        background: transparent;
+                        font-weight: $font_regular;	
+                        border-right: 1px solid #ddd;
+                        border-bottom: 1px solid #ddd;
+                        &:last-child {
+                            border-right: none;	
+                        }
+                    }
+                    td.today{
+                        font-weight: bold;
+                        font-size: 18px;
+                        color: #e86779;
+                        text-decoration: none;
+                    }
+                    td.down-img{
+                        border: none;
+                        img{
+                            margin-left: auto;
+                        }
+                    } 
+                    td.today-img{
+                        border: none;
+                        img{
+                            margin: auto;
+                        }
+                    } 
+                    td.up-img{
+                        border: none;
+                        img{
+                            margin-right: auto;
+                        }
+                    } 
+                }
+            }
+        }
+        p {
+            display: none;
+        }
+    }
+}
+

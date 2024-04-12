@@ -1,0 +1,330 @@
+@charset "UTF-8";
+/* ==========================================================
+	lumineers-page
+========================================================== */
+.lumineers {
+
+
+.content{
+	margin-bottom: 100px;
+}
+/* outline */
+.cure1-outline-section {
+	max-width: 1000px;
+	padding: 100px 20px 0;
+	margin: auto;
+}
+.cure1-outline-section h2.head {
+	text-align: center;
+	font-weight: $font_regular;
+	letter-spacing: 0.5rem;
+	text-indent: 0.5rem;	
+	margin-bottom: 50px;
+	line-height: 150%;	
+}
+.cure1-outline-section p.intro {
+	margin: 0 auto;
+	letter-spacing: 0.2rem;
+	
+	line-height: 200%;
+	text-align: center;	
+}
+.cure1-lumineers-page-section {
+	max-width: 1000px;
+	margin: 100px auto 0;
+	overflow: hidden;
+
+	.lumineers-slide{
+		max-width: 1000px;
+		margin: auto;
+		img{width: 100%;}
+	}
+
+	.bxcenter {
+		overflow: hidden;
+		max-width: 400px;
+		height: 400px;
+		margin: auto;
+	}
+	h3.head {
+		margin-bottom: 30px;
+		line-height: 150%;
+		text-align: center;	
+	}
+	h4.intro {
+		margin-bottom: 30px;
+		line-height: 150%;
+		text-align: center;	
+	}
+	p{
+		margin-bottom: 80px;
+		line-height: 180%;	
+	}
+	.center {
+		clear: both;
+		max-width: 700px;
+		padding: 50px 20px 0;	
+		margin: auto;
+		h4.head {
+			font-weight: $font_regular;
+			margin-bottom: 30px;
+			text-align: center;
+			span {
+				color: #fd2802;
+				display: block;
+				margin-top: 10px;
+			}
+		}
+		img {
+			display: block;
+			margin: 10px auto;
+			max-width: 800px;
+		}
+	}
+	.sub-head {
+		font-weight: $font_regular;
+		padding-bottom: 10px;
+		margin-bottom: 10px;
+		border-bottom: 1px solid #ccc;
+	}
+	.detail {
+	
+		line-height: 180%;
+		margin-bottom: 50px;	
+	}
+	ul.detail li {
+		list-style:none;
+		list-style: circle;
+		
+		line-height: 180%;
+		margin: 0 0 5px 20px;		
+	}
+
+	.list {
+		margin: 15px 0;
+		line-height: 180%;
+	}
+}
+
+
+.cure1-lumineers-page-section 
+.cure1-snapon-section .feature {
+	clear: both;
+	padding: 50px 0;
+}
+.cure1-snapon-section .feature li {
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+.cure1-snapon-section h4.head {
+	clear: both;
+	text-align: center;
+	padding: 50px 0 30px;
+	font-weight: $font_regular;
+}
+.cure1-snapon-section .oneday {
+	text-align: center;
+	
+	line-height: 180%;
+	margin-bottom: 50px;
+	padding: 0 0 30px;	
+}
+.cure1-lumineers-page-section .wrapper {
+	max-width: 800px;
+	margin: 0 auto 50px;
+	padding: 0 20px;
+}
+
+/* difference */
+.cure1-difference-section {
+	max-width: 1000px;
+	padding: 50px;
+	margin: 0 auto;
+	overflow: hidden;
+	background-color: #f6f2ed;	
+}
+.cure1-difference-section h3.head {
+	
+	margin-bottom: 30px;
+	text-align: center;
+}
+.cure1-difference-section a.difference-anchor {
+	margin: 50px auto 30px;
+	color: #08c;
+	text-align: center;
+	font-weight: $font_bold;
+	cursor: pointer;
+	line-height: 150%;
+	display: block;
+}
+.cure1-difference-section p.difference-anchor:hover {
+	text-decoration: underline;
+	text-align: center;	
+}
+.cure1-difference-section p.difference {
+	margin: 0 auto 30px;
+	
+	line-height: 180%;
+}
+.cure1-difference-section p.difference-sub {
+	margin: 0 auto;
+	
+	line-height: 180%;
+}
+
+/* onehour */
+.cure1-onehour-section {
+	max-width: 1000px;
+	margin: 100px auto 50px;
+	padding: 0 20px;
+	overflow: hidden;
+}
+.cure1-snapon-section p.snapon {
+	
+	line-height: 180%;
+	margin-bottom: 80px;
+	text-align: justify;
+}
+.cure1-onehour-section .sub-head {
+	font-weight: $font_regular;
+	padding-bottom: 10px;
+	margin-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.cure1-onehour-section .detail {
+	
+	line-height: 180%;
+	margin-bottom: 30px;	
+}
+.cure1-onehour-section .list {
+	
+	margin: 15px 0;
+	line-height: 180%;
+}
+.cure1-snapon-section .feature {
+	clear: both;
+	padding: 50px 0;
+}
+.cure1-snapon-section .feature li {
+	text-align: center;
+	margin-bottom: 20px;
+	
+}
+.cure1-onehour-section h4.head {
+	clear: both;
+	text-align: center;
+	padding: 0px 0 30px;
+	font-weight: $font_regular;
+}
+.cure1-onehour-section .oneday {
+	text-align: center;
+	
+	line-height: 180%;
+	margin-bottom: 50px;
+}
+.cure1-onehour-section .wrapper {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+/* payment */
+.cure1-payment-section {
+	max-width: 100%;
+	margin: 0 auto ;
+	overflow: hidden;
+	padding-bottom: 80px;
+}
+.cure1-payment-section .alignment-price h5.head {
+	text-align: center;
+	
+	padding-top: 50px;
+	margin-bottom: 50px;
+}
+.cure1-payment-section .alignment-price h5.head span {
+	display: block;
+	margin-top: 10px;
+}
+.cure1-payment-section .alignment-price p.item {
+	
+	margin-bottom: 10px;
+}
+.cure1-payment-section .alignment-price p.result {
+	font-weight: $font_regular;
+	margin-bottom: 30px;	
+}
+.cure1-payment-section .alignment-price p.yoyaku {
+	text-align: center;
+	font-weight: $font_medium;
+	padding: 5px;
+	display: block;
+	margin-bottom: 30px;
+}
+.cure1-payment-section .alignment-price p.yoyaku a {
+	background-color: #d93600;
+	letter-spacing: normal;
+	color: #fff;
+	padding: 10px;
+	border-radius: 5px;	
+}
+.cure1-payment-section .alignment-price h6.head {
+	text-align: center;
+	
+	margin:50px auto 20px;
+	max-width: 300px;
+	padding: 5px;
+	display: block;
+	background-color: #f6f2ed;
+}
+.cure1-payment-section .alignment-price table {
+	max-width: 500px;
+	margin: 0 auto;
+}
+.cure1-payment-section .alignment-price table tr {
+	border-bottom: 1px solid #f6f2ed;
+	padding: 10px;
+	display: inline-block;
+	text-align: left;
+	width: 100%;
+}
+.cure1-payment-section .alignment-price table tr th {
+	
+	width: 350px;
+	text-align: left;
+}
+.cure1-payment-section .alignment-price table tr td {
+	font-weight: $font_regular;
+	text-align: right;
+	width: 150px;	
+}
+.cure1-payment-section .alignment-price .comment {
+	max-width: 500px;
+	margin: 0 auto;
+	text-align: left;
+	font-weight: $font_regular;
+	padding: 20px;
+	line-height: 150%;
+}
+
+
+
+@include mq(smt){
+	.cure1-outline-section{
+		padding-top: 50px;
+	}
+	.cure1-lumineers-page-section{
+		margin-top: 50px;
+	}
+
+	.cure1-difference-section{
+		padding: 50px 20px;
+	}
+
+	.cure1-payment-section .alignment-price table tr td{
+		width: 50px;
+	}
+}
+
+
+/* -------  end --------  */
+}

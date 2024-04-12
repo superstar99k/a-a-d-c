@@ -1,0 +1,177 @@
+@charset "UTF-8";
+/* ==========================================================
+	about doctor page
+========================================================== */
+.doctor{
+
+
+.doctor-container{
+    max-width: 1040px;
+    padding: 0 20px;
+    margin: auto;
+    @include mq(sm3){
+        padding: 0 15px;
+    }
+}
+
+/* ==========================================================
+	about doctor content
+========================================================== */
+.doctor-header{
+    height: 220px;
+    position: relative;
+    &__caption{
+        font-size: 3rem;
+        text-align: center;
+        font-weight: bold;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+.doctor-content{
+    margin-bottom: 200px;
+}
+
+.doctor-info{
+    display: flex;
+    margin-bottom: 80px;
+    .doctor-photo{
+        max-width: 200px;
+        width: 100%;
+        margin-right: 70px;
+        img{
+            border-top: 2px solid $color_main;
+        }
+    }
+    .doctor-profile{
+        line-height: 1.8;
+        font-weight: $font_regular;
+        font-size: 1.5rem;
+        .name{
+            font-size: 1.8rem;
+            font-weight: bold;
+            span{
+                font-size: 1.4rem;
+                font-weight: normal;
+            }
+        }
+        .bio{
+            margin: 40px 0;
+            padding: 0;
+            a{
+                color: #1F96D2;
+                &:hover{
+                    color: #1b7eaf;
+                }
+            }
+        }
+        .profile-head{
+            font-weight: $font_bold;
+        }
+        .book-intro{
+            margin: 10px 0 60px 0;
+            .book-title{
+                font-size: 2.0rem;
+            }
+        }
+        .anchor{
+            color: $color_textlink;
+            font-weight: $font_medium;
+        }
+        .qualification{
+            margin: 10px 0 60px 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            line-height: 1.6;
+            li{
+                background-color: #D2BEA5;
+                padding: 5px 10px;
+                color: white;
+                margin: 0px 10px 10px 0;
+            }
+        }
+        .activity{
+            margin-top: 10px;
+            padding: 5px 25px;
+            line-height: 1.6;
+            background-color: #F0F0F0;
+            color: $color_black;
+            span{
+                display: block;
+            }
+        }
+        .message{
+            margin-top: 10px;
+        }
+    }
+
+    @include mq(){
+        .doctor-photo{
+            margin-right: 20px;
+        }
+    }
+
+    @include mq(sm2){
+        display: block;
+        .doctor-photo{
+            float: right;
+            margin-right: 0;
+            margin-left: 20px;
+        }
+        .doctor-header{
+            height: 150px;
+        }
+        .doctor-content{
+            margin-bottom: 50px;
+        }
+    }
+
+    @include mq(smt){
+        .doctor-header{
+            height: 100px;
+            &__caption{
+                font-size: 2.5rem;
+            }
+        }
+        .doctor-photo{
+            max-width: 100%;
+            float: none;
+            text-align: center;
+            margin: 0 0 20px 0;
+            img{
+                margin: auto;
+            }
+        }
+        .doctor-profile{
+            .qualification{
+                font-size: 1.4rem;
+                li{margin: 0 5px 5px 0;}
+            } 
+            .activity{
+                font-size: 1.4rem;
+                padding: 5px 10px;
+                margin-top: 5px;
+            }
+        }
+    }
+
+    @include mq(sm3){
+        .doctor-profile{
+            .qualification{
+                li{
+                    margin: 2px 0;
+                    width: 100%;
+                }
+            } 
+        }
+    }
+}
+
+
+
+/* -------  end --------  */
+}

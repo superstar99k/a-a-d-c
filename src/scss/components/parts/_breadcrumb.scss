@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* -------------------
+	BREADCRUMB
+--------------------*/
+.breadcrumb {
+    margin: 0;
+    padding: 0;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    &-wrapper{
+        background-color: white;
+    }
+    &-wrapper__content{
+        display: flex;
+        align-items: center;
+        max-width: 1040px;
+        margin: auto;
+        padding: 0 20px;
+        height: 50px;
+    }
+    li{
+        font-size: 1.4rem;
+        text-align: center;
+        position: relative;
+        font-weight: $font_medium;
+        color: rgb(185, 185, 185);
+        a{
+            color: $color_black;
+        }
+        &:not(:last-child){
+            margin-right: 60px;
+            &::after{
+                display: inline-block;
+                content: '';
+                background-image: url('../images/common/icon-arrow-right-black.png');
+                font-size: 1.8rem;
+                position: absolute;
+                width: 7px;
+                height: 15px;
+                background-size: 100% 100%;
+                right: -35px;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+        }
+    }
+
+    @include mq(smt){
+        &-wrapper__content{
+            padding: 0 15px;
+        }
+        li{
+            font-size: 1.2rem;
+            &:not(:last-child){
+                margin-right: 40px;
+                &::after{
+                    right: -25px;
+                    width: 6px;
+                    height: 15px;
+                    background-size: 100% 100%;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+            }
+        }
+    }
+
+    @include mq(sm3){
+        li{
+            &:not(:last-child){
+                margin-right: 35px;
+                &::after{
+                    right: -22px;
+                }
+            }
+        }
+    }
+}
